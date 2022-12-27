@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap');
+
+/*==== GENERAL =====*/
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap
+}
+
+main>section {
+    flex-basis: 70%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.section_title {
+    background-color: rgb(119, 40, 40);
+    letter-spacing: 0.2rem;
+    padding-top: 0.3rem;
+    text-align: left;
+    justify-content: center;
+    height: 2.5rem;
+    padding-left: 0.4rem;
+    margin: 0;
+    margin-top: 0.2rem;
+    margin-left: 0.1rem;
+    margin-right: 0.3rem;
+    margin-bottom: 0.4rem;
+    font-family: 'Arvo', serif;
+    color: white;
+}
+
+.news {
+    background-color: rgb(236, 236, 236);
+    margin: 1px;
+    margin-right: 0.3rem;
+    padding: 0.5rem;
+    font-family: 'Arvo', serif;
+    border-radius: 1%;
+
+}
+
+.news>h1 {
+    color: rgb(116, 3, 3);
+}
+
+main>aside {
+    flex-basis: 30%;
+    flex-grow: 1;
+    background-color: rgb(255, 255, 255);
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    border-left: solid 0.1rem rgb(168, 168, 168);
+    margin-top: 0.2rem;
+}
+
+.aside_header {
+    background-color: red;
+    padding: 0.5rem;
+    text-align: start;
+    color: white;
+
+    margin: 0;
+    margin-bottom: 0.5rem;
+    margin-left: 0.1rem;
+}
+
+.aside-p {
+    font-size: 0.8rem;
+}
+
+#newsletter_form {
+    display: flex;
+    margin-bottom: 0.7rem;
+}
+
+#newsletter_form>input {
+    flex-basis: 80%;
+    background-color: rgb(83, 83, 83);
+    color: white;
+    text-decoration: none;
+}
+
+#newsletter_form>button {
+    flex-basis: 20%;
+    background-color: rgba(97, 35, 35, 0.897);
+    color: white;
+    border-radius: 10%;
+    margin-left: 0.2rem;
+    cursor: pointer;
+}
+
+#newsletter_form>button:hover {
+    background-color: brown;
+}
+
+#social_media {
+    display: flex;
+
+}
+
+.social_icon {
+    background-color: rgb(224, 224, 224);
+    text-align: center;
+    justify-content: center;
+    padding: 0.2rem;
+    border-radius: 20%;
+    width: 1.8rem;
+    height: 1.5rem;
+    margin: 0.3rem;
+    margin-bottom: 0.5rem;
+
+}
+
+.social_icon:hover {
+    background-color: aliceblue;
+}
+
+.sponsorss {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.sponsor>img {
+    margin: 1rem;
+}
+
+#main_header {
+    display: flex;
+    background-color: rgb(156, 116, 116);
+    padding: 5px;
+    align-self: center;
+
+}
+
+
+#main_header>img {
+    height: 8rem;
+}
+
+@media only screen and (max-width: 750px) {
+    #main_header>img {
+        height: 4rem;
+    }
+}
+
+#main_nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    padding: 5px;
+    background-color: rgb(119, 40, 40);
+}
+
+#main_nav>a {
+    display: flex;
+    background-color: rgba(97, 35, 35, 0.897);
+    margin: 5px;
+    border-radius: 10%;
+    justify-content: start;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Arvo', serif;
+}
+
+@media only screen and (max-width: 560px) {
+    #main_nav>a {
+        font-size: 14px;
+    }
+}
+
+#main_nav>a:hover {
+    background-color: brown;
+}
+
+.sponsor>img {
+    width: 9rem;
+    height: 3rem;
+}
+
+/* ===== INDEX =====*/
+#b_red {
+    color: #d32f2fb9;
+}
+
+#b_white {
+    color: rgba(255, 255, 255, 0.788);
+}
+
+@media only screen and (max-width: 750px) {
+
+    #b_red,
+    #b_white {
+        font-size: 4rem;
+    }
+}
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    background-color: red;
+    margin: auto;
+    border: 1px solid black;
+    padding: auto;
+    border-radius: 7%;
+    background-image: url("../LIVENATION_materijal/images/live_nation_banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    width: 100%;
+    height: 30rem;
+}
+
+#banner>h1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    font-size: 7.5rem;
+    text-transform: uppercase;
+    text-shadow: 1rem 1rem 2rem black;
+    margin-bottom: 1rem;
+}
+
+#banner>h2 {
+    color: rgba(36, 36, 36, 0.637);
+    display: flex;
+    justify-content: center;
+    text-shadow: 1rem 1rem 1rem rgb(145, 3, 3);
+    margin-top: 0;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+}
+
+@media only screen and (max-width: 700px) {
+    #banner>h2 {
+        font-size: 1.5rem;
+    }
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    background-color: rgb(236, 236, 236);
+    margin: 0.1rem;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+
+}
+
+/* ===== ABOUT =====*/
+
+.about {
+    display: flex;
+    flex-direction: column;
+}
+
+.about>h1 {
+    padding: 0.3rem;
+    margin: 0;
+    justify-content: center;
+}
+
+.about-text>p {
+    padding: 0.3rem;
+    font-family: 'Arvo', serif;
+}
+
+.about-managers {
+    display: flex;
+    flex-direction: row;
+}
+
+.managers {
+    margin: 0.7rem;
+    padding: 0;
+    text-align: center;
+}
+
+.managers>p {
+    margin: 0;
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+.managers>img {
+    width: 10rem;
+}
+
+@media screen and (max-width: 640px) {
+    .managers>img {
+        width: 8rem;
+    }
+}
+
+
+/* ===== EVENTS =====*/
+.Events {
+   margin: 0.2rem;
+}
+
+.Events>h1 {
+    color: red;
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.6rem;
+}
+.table{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(53, 53, 53);
+    color: white;
+}
+.table-item{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgb(0, 0, 0);
+    
+}
+.table-item-left{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 40%;
+}
+.table-item-left>div{
+    margin-left: 0.4rem;
+}
+.table-item-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    flex-basis:60%;
+}
+.table-item-right>div{
+    margin-right: 0.4rem;
+    
+}
+.table-item-right>div>a{
+    display: flex;
+    background-color: rgb(14, 13, 13);
+    text-decoration: none;
+   border-radius: 10%;
+   font-weight: bold;
+    color: rgb(255, 255, 255);
+    border: solid 1px rgb(252, 2, 2);
+}
+.table-item-right>div>a:hover{
+    background-color: rgb(126, 18, 18);
+}
+
+
+/* ===== CONTACT =====*/
+
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+#form {
+    display: flex;
+    flex-basis: 50%;
+}
+
+#form-items>label {
+    margin-left: 0.2rem;
+}
+
+#form-items>input {
+    width: 100%;
+    background-color: rgb(121, 121, 121);
+    color: white;
+    margin: 0.2rem;
+}
+
+#form-items>textarea {
+    margin-left: 0.2rem;
+    background-color: rgb(121, 121, 121);
+    color: white;
+}
+
+#form-items>button {
+    background-color: rgba(97, 35, 35, 0.897);
+    border-radius: 10%;
+    cursor: pointer;
+    color: white;
+    margin-left: 0.2rem;
+
+}
+
+#form-items>button:hover {
+    background-color: brown;
+
+}
+
+.visit {
+    margin: 0;
+    margin-top: 2rem;
+    margin-left: 0.2rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+
+.map {
+    margin: 0;
+}
+
+.map>iframe {
+    width: 100%;
+    height: 20rem;
+}
+
+ /* ===== ARTISTS =====*/
+
+ .artist>h1{
+    color: red;
+    margin: 0.5rem;
+    margin-left: 1rem;
+    font-size: 2rem;
+ }
+
+ .artist-items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(235, 234, 234);
+    margin: 0.3rem;
+    border-radius: 10%;
+ }
+
+ .artist-item{
+    
+    text-align: center;
+    margin: 0.2rem;
+    margin-top: 1rem;
+    padding: 0;
+    width: 30%;
+    height: 15rem;
+ }
+ .artist-item>img{
+    width: 14rem;
+    height: 10rem;
+    margin: 0;
+    border-radius: 10%;
+ }
+ @media screen and (max-width:1200px){
+    .artist-item>img{
+        width: 11rem;
+        height: 8rem;
+    }
+ }
+ @media  screen and (max-width: 700px) {
+    .artist-item>img{
+        width: 7rem;
+        height: 5rem;
+    }
+    
+ }
+ .artist-item>h1{
+    margin: 0;
+    font-size: 1rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.4rem;
+ }
+ .artist-item>div>a{
+    text-decoration: none;
+    color: rgb(163, 8, 8);
+    font-weight: bold;
+    background-color: rgb(189, 187, 187);
+    border-radius: 20%;
+ }
+ .artist-item>div>a:hover{
+    color: red;
+ }
